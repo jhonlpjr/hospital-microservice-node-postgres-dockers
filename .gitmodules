@@ -4,3 +4,9 @@
 [submodule "database"]
 	path = database
 	url = https://github.com/jhonlpjr/hospital-database-postgresql.git
+[submodule "api-gateway"]
+	path = api-gateway
+	url = https://github.com/jhonlpjr/hospital-api-gateway-node.git
+[submodule "patient-microservice"]
+	path = patient-microservice
+	url = https://github.com/jhonlpjr/hospital-patient-microservice-node.git
