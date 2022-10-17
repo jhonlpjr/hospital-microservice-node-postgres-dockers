@@ -1,0 +1,6 @@
+[submodule "microservice"]
+	path = microservice
+	url = https://github.com/jhonlpjr/hospital-microservice-node.git
+[submodule "database"]
+	path = database
+	url = https://github.com/jhonlpjr/hospital-database-postgresql.git
