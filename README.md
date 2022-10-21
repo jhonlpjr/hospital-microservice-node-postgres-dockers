@@ -4,9 +4,9 @@ Se desarrolló un microservicio para pacientes de un hospital, que pueda registr
 Para el consumo del microservicio se desarrollo un API-GATEWAY con peticiones HTTP, que pueda facilitar el acceso como tal desde cualquier cliente que permita realizar peticiones de Api Rest como GET y POST, ya que el microservicio desarrollado se comunica por messages cmd a nivel TCP (Tambien se comunican a nivel de events, coles, sockets, etc. ).
 El microservicio está conectado a una base de datos: hospital, en la tabla: patient.
 Las tecnologías utilizadas para el proyecto son: 
-    *Node.js para el Microservicio y para el Api-Gateway
-    *PostgreSql para la base de datos
-    *Docker para los contenedores, que nos permitirán levantar las partes del proyecto de manera independiente y de forma escalable sin necesidad de depender del host en donde se encuentre descargado.
+    * Node.js para el Microservicio y para el Api-Gateway
+    * PostgreSql para la base de datos
+    * Docker para los contenedores, que nos permitirán levantar las partes del proyecto de manera independiente y de forma escalable sin necesidad de depender del host en donde se encuentre descargado.
 
 ## Configuration
 
