@@ -15,7 +15,7 @@ Las tecnologías utilizadas para el proyecto son:
 
 **Para configurar el microservicio**
 
-En la raíz del proyecto, ubicarse con la carpeta patient_microservice.
+En la raíz del proyecto, ubicarse con la carpeta *patient_microservice*.
 Ahí se configurarán las credenciales de la base de datos en el archivo: .env, hay un archivo pre existente llamado: .env.example, el cual tiene el ejemplo de como dejar las credenciales. En *DB_HOST*, poner de preferencia el ip de la máquina local y no localhost, ya que en ocasiones genera erorres por configuración restante de la misma pc o laptop en que se descargo el proyecto.
 ```bash
 DB_HOST=YOUR.IP,
@@ -34,14 +34,15 @@ En caso se requiera, configurará los demás parámetros pero de preferencia dej
 ## Installation & Deploy
 
 **Primero la Base de Datos**
-*Se Levantará el contenedor de postgresql, el cual ya viene preconfigurado en su respectivo archivo docker-compose.yml, para ello nos utilizaremos la terminal de nuestra preferencia y teniendo previamente instalado docker en nuestra máquica host, nos ubicaremos en la raíz del proyecto y luego la carpeta database.*
-*Ahí ejecutaremos el siguiente comando:*
+
+Se Levantará el contenedor de postgresql, el cual ya viene preconfigurado en su respectivo archivo docker-compose.yml, para ello nos utilizaremos la terminal de nuestra preferencia y teniendo previamente instalado docker en nuestra máquica host, nos ubicaremos en la raíz del proyecto y luego la carpeta database.
+Ahí ejecutaremos el siguiente comando:
 
 ```bash
 $ docker-compose up
 ```
 
-*Esto instalará la imagen del contenedor y desplegará nuestra base de datos preconfigurada, podemos verificar las credenciales si deseamos en el archivo docker-compose.yml .*
+Esto instalará la imagen del contenedor y desplegará nuestra base de datos preconfigurada, podemos verificar las credenciales si deseamos en el archivo docker-compose.yml .
 
 *Para reiniciar el contenedor:*
 ```bash
@@ -55,12 +56,13 @@ $ docker-compose down
 
 **Luego el microservicio y el api-gateway que lo consumirá y lo mostrará para su consumo externo mediante peticiones HTTP.**
 
-*utilizaremos la terminal de nuestra preferencia y teniendo previamente instalado docker en nuestra máquica host, nos ubicaremos en la raíz del proyecto.*
-*Ahí ejecutaremos el siguiente comando:*
+Utilizaremos la terminal de nuestra preferencia y teniendo previamente instalado docker en nuestra máquica host, nos ubicaremos en la raíz del proyecto.
+
+Ahí ejecutaremos el siguiente comando:
 ```bash
 $ docker-compose up
 ```
-*Este instalará y/o actualziará las dependencias de ambas partes, luego levantará los contenedores respectivos de node para cada uno, luego de ello ya podremos consumir nuestro microsevicio de paciente, el cual se podrá accede mediante dos enpoints del api-gateway, el cual consume el microsevicio por dentro.*
+Este instalará y/o actualziará las dependencias de ambas partes, luego levantará los contenedores respectivos de node para cada uno, luego de ello ya podremos consumir nuestro microsevicio de paciente, el cual se podrá accede mediante dos enpoints del api-gateway, el cual consume el microsevicio por dentro.
 
 ## Swagger
 
