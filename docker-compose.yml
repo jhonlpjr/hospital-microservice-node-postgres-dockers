@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+   patient-microservice:
+      image: node:14-alpine
+      container_name: patient-microservice
+      working_dir: /var/www
+      volumes:
+         - ./patient-microservice/:/var/www
+      tty: true
+      ports:
+         - "8081:8081"
+      networks:
+         app:
+      command: >
+         sh -c "npm install && npm run start:dev"
+   api-gateway:
+      image: node:14-alpine
+      container_name: api-gateway
+      working_dir: /var/www
+      volumes:
+         - ./api-gateway/:/var/www
+      tty: true
+      ports:
+         - "8080:8080"
+      networks:
+         app:
+      depends_on:
+         - patient-microservice
+      command: >
+         sh -c "npm install && npm run start:dev"
+networks:
+   app:
