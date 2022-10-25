@@ -12,6 +12,7 @@ Las tecnologías utilizadas para el proyecto son:
 ## Configuration
 
 **LUEGO DE CLONAR O DESCARGAR EL PROYECTO**
+**Recordar que cada submodule debe estar en la última versión o en la rama master, para que este con los últimos cambios funcionales actualzados.**
 
 **Para configurar el microservicio**
 
@@ -73,6 +74,16 @@ Este instalará y/o actualziará las dependencias de ambas partes, luego levanta
 Ejemplo: (https://localhost:8080/docs)
 
 *Ahí se podrá ver todos los endpoints, parámetros de uso, ejemplos de como se podrían usar los request y como llegarían los posibles responses.*
+
+## Unit Test
+
+**Para correr las pruebas unitarias:**
+
+*Ubicarse en la carpeta raíz de api-gateway o de patient-microservice con la terminal de su preferencia y ejecutar el siguiente comando:*
+```bash
+# unit tests
+$ npm run test
+```
 
 ## Support
 
