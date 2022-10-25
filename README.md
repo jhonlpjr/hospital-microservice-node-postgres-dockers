@@ -13,7 +13,7 @@ Las tecnologías utilizadas para el proyecto son:
 
 **LUEGO DE CLONAR O DESCARGAR EL PROYECTO**
 
-*Recordar que cada submodule debe estar en la última versión o en la rama master, para que este con los últimos cambios funcionales actualzados.*
+*Recordar que cada submódulo: api-gateway, database y patient-service; deben estar en la última versión o en la rama master, para que este con los últimos cambios funcionales actualzados.*
 
 **Para configurar el microservicio**
 
